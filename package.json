@@ -17,7 +17,8 @@
     "prettier:fix": "prettier --write \"*/**/*.{ts,tsx}\" --loglevel=warn",
     "lint": "eslint . --ext .ts,.tsx",
     "lint:fix": "eslint . --ext .ts,.tsx --fix",
-    "hooks:pre-commit": "npm run prettier:fix && npm run lint:fix"
+    "hooks:pre-commit": "npm run prettier:fix && npm run lint:fix",
+    "prepare": "husky install"
   },
   "dependencies": {
     "@docusaurus/core": "2.1.0",
@@ -35,7 +36,7 @@
     "@typescript-eslint/parser": "^5.39.0",
     "eslint": "^8.24.0",
     "eslint-plugin-react": "^7.31.8",
-    "husky": "^8.0.1",
+    "husky": "^8.0.0",
     "prettier": "^2.7.1",
     "typescript": "^4.7.4"
   },
