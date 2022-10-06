@@ -13,11 +13,11 @@
     "write-translations": "docusaurus write-translations",
     "write-heading-ids": "docusaurus write-heading-ids",
     "typecheck": "tsc",
-    "hooks:pre-commit": "npm run prettier:fix && npm run lint:fix",
-    "lint": "eslint . --ext .ts",
-    "lint:fix": "eslint . --ext .ts --fix",
-    "prettier:check": "prettier --check \"*/**/*.ts\" --loglevel=warn",
-    "prettier:fix": "prettier --write \"*/**/*.ts\" --loglevel=warn"
+    "prettier:check": "prettier --check \"*/**/*.{ts,tsx}\" --loglevel=warn",
+    "prettier:fix": "prettier --write \"*/**/*.{ts,tsx}\" --loglevel=warn",
+    "lint": "eslint . --ext .ts,.tsx",
+    "lint:fix": "eslint . --ext .ts,.tsx --fix",
+    "hooks:pre-commit": "npm run prettier:fix && npm run lint:fix"
   },
   "dependencies": {
     "@docusaurus/core": "2.1.0",
