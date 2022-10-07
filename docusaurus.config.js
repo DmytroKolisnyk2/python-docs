@@ -1,36 +1,35 @@
 // @ts-check
-// Note: type annotations allow type checking and IDEs autocompletion
-
 const lightCodeTheme = require('prism-react-renderer/themes/github');
 const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: "Python",
-  tagline: "Python docs GoITeens",
-  url: "https://goiteens-python-docs.netlify.app/",
-  baseUrl: "/",
-  onBrokenLinks: "throw",
-  onBrokenMarkdownLinks: "warn",
-  favicon: "img/favicon.ico",
-  organizationName: "GoITeens",
-  projectName: "Python docs",
+  title: 'Python',
+  tagline: 'Python docs GoITeens',
+  url: 'https://goiteens-python-docs.netlify.app/',
+  baseUrl: '/',
+  onBrokenLinks: 'throw',
+  onBrokenMarkdownLinks: 'warn',
+  favicon: 'img/favicon.ico',
+  organizationName: 'GoITeens',
+  projectName: 'Python docs',
   i18n: {
-    defaultLocale: "ua",
-    locales: ["ua"],
+    defaultLocale: 'ua',
+    locales: ['ua'],
   },
 
   presets: [
     [
-      "classic",
+      'classic',
       /** @type {import('@docusaurus/preset-classic').Options} */
       ({
         docs: {
-          sidebarPath: require.resolve("./sidebars.js"),
-          editUrl: "https://github.com/DmytroKolisnyk2/python-docs/blob/master/",
+          sidebarPath: require.resolve('./sidebars.js'),
+          editUrl:
+            'https://github.com/DmytroKolisnyk2/python-docs/blob/master/',
         },
         theme: {
-          customCss: require.resolve("./src/css/custom.css"),
+          customCss: require.resolve('./src/styles/theme.css'),
         },
       }),
     ],
@@ -41,20 +40,20 @@ const config = {
     ({
       navbar: {
         logo: {
-          alt: "My Site Logo",
-          src: "img/logo.svg",
+          alt: 'GoITeens logo',
+          src: 'img/logo.png',
         },
         items: [
           {
-            type: "doc",
-            docId: "intro",
-            position: "left",
-            label: "Docs",
+            type: 'doc',
+            docId: 'intro',
+            position: 'left',
+            label: 'Docs',
           },
           {
-            href: "https://github.com/facebook/docusaurus",
-            label: "GitHub",
-            position: "right",
+            href: 'https://github.com/DmytroKolisnyk2/python-docs/',
+            label: 'GitHub',
+            position: 'right',
           },
         ],
       },
